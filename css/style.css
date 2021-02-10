@@ -32,17 +32,20 @@ h1{
 
 .row{
     text-align: center;
-    height: 200px;
+    height: 250px;
 
 }
 
 .cards{
     display: inline-block;
     width: 20%;
+    height: 200px;
     margin: 10px;
     background-image: url(../img/pattern.png);
     background-size: contain;
-
+    position: relative;
+    border-radius: 10px;
+    background-color: white;
 }
 
 img{
@@ -50,10 +53,53 @@ img{
     overflow: hidden;
 }
 
-h2{
-    display: inline-block;
+h2 {
+    position:absolute;
+    bottom: 0;
+    left:0;
+    width: 100%;
     color: orange;
-
 }
-                
+
+.cards img{
+    display: none;
+}
+
+.cards h2{
+    display: none;
+}
+
+.cards:hover{
+    background-image: none;
+}
+
+.cards:hover img{
+    display: block;
+}
+
+.cards:hover h2{
+    display: block;
+}
+
+ .cards.active{
+    background-image: none;
+    pointer-events: none;
+}
+
+.cards.active img{
+    display:block ;
+}
+
+.cards.active h2{
+    display:block ;
+    color: violet;
+}
+
 /* Fine Main */
+
+/* footer */
+
+p{
+    text-align: center;
+    margin: 40px;
+}
