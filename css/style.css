@@ -4,3 +4,56 @@
     box-sizing: border-box;
 }
 
+body{
+    background-color:#add8e6;
+    font-family: "Nerko one", Arial, Helvetica, sans-serif;
+}
+
+/* Inizio header */
+
+h1{
+    text-align: center;
+    color: white;
+    font-size: 50px;
+}
+
+/* fine header */
+
+/* inizio Main */
+.container{
+    width: 60%;
+    margin: auto;
+}
+
+.memory{
+    margin-top: 40px;
+
+}
+
+.row{
+    text-align: center;
+    height: 200px;
+
+}
+
+.cards{
+    display: inline-block;
+    width: 20%;
+    margin: 10px;
+    background-image: url(../img/pattern.png);
+    background-size: contain;
+
+}
+
+img{
+    width: 100%;
+    overflow: hidden;
+}
+
+h2{
+    display: inline-block;
+    color: orange;
+
+}
+                
+/* Fine Main */
